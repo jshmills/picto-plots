@@ -113,7 +113,7 @@ class Images {
                     throw new Error(response.statusText)
                 })
                 .then((data) => {
-                    this.imageData.push([searchTerm, data.hits[0].largeImageURL]);
+                    this.imageData.push([searchTerm, data.hits[0].webformatURL]);
                 })
                 .catch((error) => {
                     console.log(error);
@@ -139,7 +139,7 @@ setTimeout(function () {
             imgContainer.innerHTML += `<img title=${data[0]} src=${data[1]}/>`;
         });
     }, 500);
-}, 500);
+}, 1000);
 
 reveal.addEventListener("click", function () {
     movieTitle.style.color = "#444444";
