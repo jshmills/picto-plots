@@ -79,7 +79,6 @@ class Movie {
             })
             .catch((error) => {
                 console.log(error);
-                return;
             });
     }
 
