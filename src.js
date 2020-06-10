@@ -137,7 +137,6 @@ setTimeout(function () {
     setTimeout(function () {
         let imgContainer = document.getElementById("images");
         images.imageData.map((data) => {
-            console.log(data);
             imgContainer.innerHTML += `<img title=${data[0]} src=${data[1]}/>`;
         });
     }, 500);
